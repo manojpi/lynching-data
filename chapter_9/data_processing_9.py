@@ -34,7 +34,7 @@ def create_csv():
 
     with open("processed_data_9.csv", "w") as file:
         writer = csv.writer(file)
-        writer.writerow(["Date","Name","City/County","State","Crime"])
+        writer.writerow(["Date","Name","Location","State","Crime"])
 
         for crime in crime_to_data:
             for data in crime_to_data[crime]:
